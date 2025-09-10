@@ -82,6 +82,14 @@ blockquote {
   background: #ffffff;
 }
 
+.flex-1{
+  display: flex;
+}
+
+.flexbox-1{
+  width: 5%;
+}
+
 /* Footer */
 .footer {
   background: #1f1f1f;
