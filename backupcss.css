@@ -1,0 +1,146 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#bgcolor {
+    background-color: #f4f4f4;
+    /* padding: 50px; */
+}
+
+
+#content{
+    margin: 0% 0%;
+}
+#whole-content {
+    padding: 0% 5% 5% 5%;
+    background-color: #ffffff;
+
+}
+
+/* Navbar styling */
+
+#navbar {
+    background-color: #eafff6;
+    height: 20px;
+    display: flex;
+    padding: 2% 5% 2% 5%;
+    gap: 3%;
+    font-size: 17px;
+}
+
+.empty {
+    width: 50%;
+    background-color: #eafff6;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+.nav-item {
+    padding: 12px 22px;
+    border: 1px solid #047806;
+    background-color: #047806;
+    color: #f4f4f4;
+    border-radius: 50px;
+}
+
+.cta {
+    padding: 25px 50px;
+    border: 1px solid #047806;
+    background-color: #047806;
+    color: #f4f4f4;
+    border-radius: 25px;
+    width: 50%;
+}
+
+/* "About me" section styling */
+
+.imgbox{
+    width: 35%;
+    /* padding-top: 30px; */
+}
+
+.container{
+    padding: 0% 5% 0% 5%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    background-color: #eafff6;
+    /* background-color: #F1FFF9; 
+    background-color: #B1FFDB; */
+}
+
+
+.width50per {
+    width: 60%;
+    padding: 0px 0px 30px 0px;
+}
+
+
+h1 {
+    color: #105C39;
+    line-height: 60px;
+    font-size: 43px;
+    padding-top: 30px;
+}
+
+#intro{
+    padding-bottom: 10px;
+    padding-top: 30px;
+    color: #000000;
+}
+h2 {
+    color: #105C39;
+    font-size: 33px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.introcontent{
+    padding-bottom: 20px;
+    font-size: 17.5px;
+    line-height: 30px;
+
+}
+
+/* Skills section styling */
+
+table, th, td {
+    justify-content: left;
+    border: 1px solid #0c169e;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* Pojects section styling */
+
+.flexbox{
+    display: flex;
+    gap: 20px;
+}
+
+.flexbox1{
+     width: 33%;
+    padding: 20px;
+    border: 1px solid #0c169e;
+    border-radius: 30px;
+}
+
+.paragraph{
+    padding: 20px 10px 10px 10px;
+}

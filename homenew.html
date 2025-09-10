@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Revati Portfolio</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div id="navbar">
+    <div class="nav">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="bgcolor">
+    <div id="content" class="fade-in-section">
+      <div class="container" id="about">
+        <div class="imgbox floating">
+          <img src="images/hero-img.png" alt="" width="100%">
+        </div>
+        <div class="width50per">
+          <h1>Hello, I am Revati Hardikar</h1>
+          <h2 id="intro">A UX Researcher & Human-Centred Designer</h2>
+          <p class="introcontent">I focus on creating digital experiences that are thoughtful, accessible, and genuinely
+            helpful. My process begins with research by listening to users, mapping their journeys, and uncovering real
+            challenges. From there, I design and refine solutions that not only look good but also work seamlessly in
+            people’s lives. For me, UX is about more than improving interfaces. It is about shaping the entire
+            experience of how people interact with technology and services.</p>
+          <div class="cta">Learn more about me</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in-section">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-container">
+        <div class="skill-block tilt">
+          <h3>🔎 Research</h3>
+          <ul>
+            <li>UX Research</li>
+            <li>Usability Testing</li>
+            <li>Accessibility Considerations</li>
+            <li>Design Thinking</li>
+          </ul>
+        </div>
+        <div class="skill-block tilt">
+          <h3>🎨 Design</h3>
+          <ul>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>Inclusive Design</li>
+            <li>Interaction Design</li>
+          </ul>
+        </div>
+        <div class="skill-block tilt">
+          <h3>⚙️ Development</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript (basic)</li>
+            <li>Bootstrap</li>
+            <li>Angular (basic)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in-section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-container">
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/connecting-flights.png" alt="InformMeRight cover image">
+            <div class="project-overlay">
+              <h3 class="project-title">Connecting Flights - InformMeRight</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <p class="project-desc">An in-depth case study of flight disruption experiences of passengers.</p>
+            <div class="project-tags">
+              <span class="tag">Discovery</span>
+              <span class="tag">Usability</span>
+              <span class="tag">Web</span>
+            </div>
+            <a href="project1.html" class="project-btn">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/appointment-thumb.jpg" alt="Appointment Booking App screens">
+            <div class="project-overlay">
+              <h3 class="project-title">Appointment Booking App</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <p class="project-desc">Redesigned the scheduling flow to reduce drop-offs and improve accessibility for
+              patients booking appointments.</p>
+            <div class="project-tags">
+              <span class="tag">Research</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <a href="case-study-appointment.html" class="project-btn">View Case Study</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/accessibility-thumb.jpg" alt="Community website accessibility redesign preview">
+            <div class="project-overlay">
+              <h3 class="project-title">Accessibility Website Redesign</h3>
+            </div>
+          </div>
+          <div class="project-meta">
+            <p class="project-desc">Navigation and readability improvements to meet WCAG guidelines and boost content
+              findability.</p>
+            <div class="project-tags">
+              <span class="tag">IA</span>
+              <span class="tag">WCAG</span>
+              <span class="tag">Content</span>
+            </div>
+            <a href="case-study-accessibility.html" class="project-btn">View Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in-section">
+      <h2>Let's connect!</h2>
+      <ul>
+        <li>View my portfolio on <a href="https://www.behance.net/revatihardikar" target="_blank">Behance</a></li>
+        <li>Visit my profile on <a href="https://www.linkedin.com/in/revati-hardikar">LinkedIn</a></li>
+        <li>Send me an email at <a href="mailto:revatimh12@gmail.com">revatimh12@gmail.com</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Scripts for dynamics -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll(".fade-in-section");
+    const appearOptions = { threshold: 0.15 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>
