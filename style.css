@@ -340,4 +340,55 @@ h1 {
 }
 
 
+/* ========== Media Queries ========== */
+/* Tablets: 768px – 1024px */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* space between image and text */
+  }
 
+  .section {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .carousel .slides {
+    flex-direction: column;
+  }
+
+  .carousel .slide img {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 767px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .section {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel .slides {
+    flex-direction: column;
+  }
+
+  .carousel .slide img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
