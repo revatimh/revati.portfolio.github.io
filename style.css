@@ -144,10 +144,6 @@
       filter: drop-shadow(0 10px 30px rgba(26, 54, 93, 0.2));
     }
 
-    .floating {
-      animation: floatingHero 3s ease-in-out infinite;
-    }
-
     @keyframes floatingHero {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-15px); }
@@ -263,7 +259,7 @@
     }
 
     .skill-block li {
-      padding: 0.7rem 0;
+      padding: 0.3rem 0;
       color: var(--dark-text);
       position: relative;
       padding-left: 1.5rem;
